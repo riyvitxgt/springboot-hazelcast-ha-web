@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     },
   },
   auth: {
-    baseURL: 'http://localhost:8080', // 后端 API 基础地址
+    baseURL: 'http://localhost:8081', // 后端 API 基础地址
     provider: {
       type: 'local',
       endpoints: {
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
   css: ['vuetify/styles', '~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      apiBase: 'http://localhost:8080', // 一致的后端 API 地址
+      apiBase: 'http://localhost:8081', // 一致的后端 API 地址
     },
   },
 });
