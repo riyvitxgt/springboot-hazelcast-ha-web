@@ -22,13 +22,16 @@ export default defineNuxtConfig({
       type: 'local',
       endpoints: {
         signIn: { path: '/api/auth/login', method: 'post' },
-        getSession: { path: '/api/auth/user', method: 'get' },
+        getSession: { path: '/api/auth/session', method: 'get' },
         signOut: { path: '/api/auth/logout', method: 'post' },
       },
       token: {
         signInResponseTokenPointer: '/data/token',
         headerName: 'Authorization',
         type: 'Bearer',
+      },
+      session: {
+        dataResponsePointer: '/data'
       },
       pages: {
         login: '/login', // 明确指定登录页面路径

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-const { signOut } = useAuth();
+const { signOut } = useAuthExtended();
 
 const handleLogout = async () => {
   await signOut({ callbackUrl: '/login' });
