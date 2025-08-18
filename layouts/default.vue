@@ -96,7 +96,10 @@
 
     <v-main>
       <v-container fluid>
-        <slot />
+        <!-- 如果是 Nuxt 3，使用 NuxtPage -->
+        <NuxtPage />
+        <!-- 如果是普通 Vue Router，使用 router-view -->
+        <!-- <router-view /> -->
       </v-container>
     </v-main>
   </v-app>
